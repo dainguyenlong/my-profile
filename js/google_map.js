@@ -1,6 +1,15 @@
 
 var google;
 
+let map: google.maps.Map;
+
+function initMap(): void {
+  map = new google.maps.Map(document.getElementById("map") as HTMLElement, {
+    center: { lat: -34.397, lng: 150.644 },
+    zoom: 8,
+  });
+}
+
 function init() {
     // Basic options for a simple Google Map
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
