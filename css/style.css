@@ -23,44 +23,6 @@ body {
   background: #fff;
 }
 
-/* custom */
-#failure {
-  background: #ff3939;
-  color: #f0f0f0;
-}
-
-.notify {
-  position: absolute;
-  top: 0px;
-  width: 100%;
-  height: 0;
-  box-sizing: border-box;
-  color: white;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.6);
-  overflow: hidden;
-  box-sizing: border-box;
-  transition: height 0.2s;
-}
-
-#notifyType:before {
-  display: block;
-  margin-top: 15px;
-}
-
-.active {
-  height: 50px;
-}
-
-.success:before {
-  content: "Aww Yeaaaaa! Success!";
-}
-
-.failure:before {
-  content: "Oh no! Something didn't go as planned :(";
-}
-/* end custom */
-
 #page {
   position: relative;
   overflow-x: hidden;
