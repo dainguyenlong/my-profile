@@ -210,15 +210,15 @@
 				var xhttp = new XMLHttpRequest();
 				xhttp.onreadystatechange = function () {
 						if (this.readyState == 4 && this.status == 200) {
+							console.log(this.responseText);
 							$('.views-item').prepend(this.responseText);
 						}
 				};
-				xhttp.open("GET", "back-end/count-page.php", true);
+				xhttp.open("GET", "./back-end/count-page.php", true);
 				xhttp.send();
 			}
 		loadDoc();
 	</script>
-	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- Bootstrap -->
