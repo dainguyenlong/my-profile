@@ -25,7 +25,10 @@
 	<div class="fh5co-loader"></div>
 	
 	<div id="page">	
-	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image:url(images/cover_bg_3.jpg);" data-stellar-background-ratio="0.5">
+		<div class="views">
+			<p class="views-item"> views</p>
+		</div>
+	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -202,6 +205,19 @@
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
 	</div>
+	<script>
+		function loadDoc() {
+				var xhttp = new XMLHttpRequest();
+				xhttp.onreadystatechange = function () {
+						if (this.readyState == 4 && this.status == 200) {
+							$('.views-item').prepend(this.responseText);
+						}
+				};
+				xhttp.open("GET", "back-end/count-page.php", true);
+				xhttp.send();
+			}
+		loadDoc();
+	</script>
 	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
@@ -215,8 +231,6 @@
 	<script src="js/jquery.easypiechart.min.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
-	<!-- back-end -->
-	<script src="js/contact.js"></script>
 	</body>
 </html>
 
