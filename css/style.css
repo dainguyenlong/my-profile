@@ -1349,3 +1349,13 @@ input[type="text"] {
   padding: 0 10px;
   margin-bottom: 0px !important;
 }
+
+.overflow-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.overflow-initial:hover .overflow-ellipsis{
+  overflow: initial;
+  text-overflow: ellipsis;
+}

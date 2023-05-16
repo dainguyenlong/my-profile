@@ -1,2 +1,2 @@
 # my-profile
-My profile abc
+My profile
